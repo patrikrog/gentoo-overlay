@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 CMAKE_REMOVE_MODULES_LIST=( FindFreetype )
 
@@ -35,6 +35,8 @@ RDEPEND="
 	x11-libs/libxcb:=
 "
 
+DEPEND="${RDEPEND}"
+
 src_unpack() {
 	default
 
@@ -43,7 +45,7 @@ src_unpack() {
 	fi
 }
 
-src_configure() {
+multilib_src_configure() {
 	local mycmakeargs=(
 		-DBUILD_PLUGIN=OFF
 	)
@@ -52,7 +54,7 @@ src_configure() {
 			-DBUILD_PLUGIN=ON
 		)
 	fi
-	cmake-multilib_src_configure
+	cmake_src_configure
 }
 
 src_compile() {
