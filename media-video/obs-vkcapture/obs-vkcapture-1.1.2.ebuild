@@ -43,7 +43,7 @@ src_unpack() {
 	fi
 }
 
-src_configure() {
+multilib_src_configure() {
 	local mycmakeargs=(
 		-DBUILD_PLUGIN=ON
 	)
@@ -55,6 +55,6 @@ src_configure() {
 	cmake-multilib_src_configure
 }
 
-src_compile() {
+multilib_src_compile() {
 	cmake-multilib_src_compile
 }
