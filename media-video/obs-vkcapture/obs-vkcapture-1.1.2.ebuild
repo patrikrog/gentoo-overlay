@@ -5,7 +5,7 @@ EAPI=7
 
 CMAKE_REMOVE_MODULES_LIST=( FindFreetype )
 
-inherit xdg multilib cmake-multilib
+inherit xdg cmake-multilib
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
@@ -44,6 +44,9 @@ src_unpack() {
 }
 
 src_configure() {
+	local mycmakeargs=(
+		-DBUILD_PLUGIN=ON
+	)
 	if ! multilib_is_native_abi; then
 		local mycmakeargs=(
 			-DBUILD_PLUGIN=OFF
