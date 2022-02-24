@@ -43,18 +43,18 @@ src_unpack() {
 	fi
 }
 
-multilib_src_configure() {
+src_configure() {
 	local mycmakeargs=(
-		-DBUILD_PLUGIN=ON
+		-DBUILD_PLUGIN=OFF
 	)
-	if ! multilib_is_native_abi; then
-		local mycmakeargs=(
-			-DBUILD_PLUGIN=OFF
+	if multilib_is_native_abi; then
+		mycmakeargs=(
+			-DBUILD_PLUGIN=ON
 		)
 	fi
 	cmake-multilib_src_configure
 }
 
-multilib_src_compile() {
+src_compile() {
 	cmake-multilib_src_compile
 }
