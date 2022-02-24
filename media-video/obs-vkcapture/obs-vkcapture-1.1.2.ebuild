@@ -26,7 +26,6 @@ BDEPEND="
 	dev-util/vulkan-headers
 	media-libs/shaderc
 	media-libs/vulkan-loader
-	>=media-video/obs-studio-27[wayland]
 	x11-libs/libdrm
 "
 RDEPEND="
