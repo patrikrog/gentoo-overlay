@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -14,7 +14,7 @@ SRC_URI="https://ftp.hp.com/pub/softlib/software13/printers/SS/SL-M4580FX/${MY_P
 
 LICENSE="Samsung-EULA"
 SLOT="0"
-KEYWORDS="-* ~amd64 ~x86"
+KEYWORDS="-* amd64 ~x86"
 IUSE="cups network scanner"
 S="${WORKDIR}/${MY_P}"
 
