@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake gnome2-utils xdg
+inherit cmake xdg
 
 MY_PN="tremotesf2"
 
@@ -14,7 +14,6 @@ SRC_URI="https://github.com/equeim/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 RDEPEND="dev-qt/qtcore:5
 	dev-qt/qtdbus:5
