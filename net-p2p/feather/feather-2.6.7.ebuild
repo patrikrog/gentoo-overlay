@@ -47,10 +47,10 @@ DEPEND="
 	~dev-libs/polyseed-1.0.0
 	dev-libs/libzip:=
 	dev-libs/boost:=[nls]
-	>=dev-qt/qtbase-6.5.2:6
-	>=dev-qt/qtsvg-6.5.2:6
-	>=dev-qt/qtmultimedia-6.5.2:6
-	>=dev-qt/qtwebsockets-6.5.2:6
+	>=dev-qt/qtbase-6.7.0:6
+	>=dev-qt/qtsvg-6.7.0:6
+	>=dev-qt/qtmultimedia-6.7.0:6
+	>=dev-qt/qtwebsockets-6.7.0:6
 	dev-libs/libgcrypt:=
 	sys-libs/zlib
 	dev-libs/openssl:=
