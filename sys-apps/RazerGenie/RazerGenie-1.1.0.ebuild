@@ -7,7 +7,7 @@ inherit meson
 
 DESCRIPTION="Razer devices configurator"
 HOMEPAGE="https://github.com/z3ntu/RazerGenie"
-SRC_URI="https://github.com/z3ntu/RazerGenie/releases/download/v${PV}/${P}.tar.xz -> ${P}.tar.xz"
+SRC_URI="https://github.com/z3ntu/RazerGenie/releases/download/v${PV}/${P}.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
